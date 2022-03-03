@@ -361,7 +361,7 @@ env = ModelEnv()
 # log_path = os.path.join('Training','Logs')
 # model = PPO("MlpPolicy", env, verbose = 1, tensorboard_log=log_path)
 # model.learn(total_timesteps = 10000)
-ppo_path = os.path.join('Project','Training','Saved Models','PPO_Segment')
+ppo_path = os.path.join('Project','Training','Saved Models','PPO_Segment') # should create the file and The PPO_Segment has uploaded.
 model = PPO.load(ppo_path, env)
 
 obs = env.reset()
